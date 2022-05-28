@@ -1,0 +1,29 @@
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8"></meta>
+                <title>Emmela</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+
+        <body>
+            <div class="container text-center" >
+                <div class="wrapper">
+                    <div class="bod" disabled="true">
+                        <p> {% load static %} <img src="{% static 'media/Emmela_V1.005.jpg' %}" alt="base" /></p>
+                        <h1> Hello Emmela </h1>
+                        <h2> Emmela Tracking </h2>
+                        <p> {% load static %} <link rel="stylesheet" href="{% static 'css/styles.css' %}" /></p>
+                        <p>
+                            <span> <a href="tracking"> <h3>Tracking</h3> </a></span>
+                            <span> <a href="loading"> <h3>Loading</h3> </a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </body>
+{% endblock content %}

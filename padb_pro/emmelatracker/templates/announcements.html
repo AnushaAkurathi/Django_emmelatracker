@@ -1,0 +1,6 @@
+<h2>Emmela Announcements Page</h2>
+<ul>
+    {% for post in object_list %}
+    <li>{{ post.id}}- {{ post.info}}</li>
+    {% endfor %}
+  </ul>

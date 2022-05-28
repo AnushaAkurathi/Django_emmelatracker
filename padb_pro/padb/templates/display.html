@@ -1,0 +1,12 @@
+<!-- {% for sts in st %}
+
+{{sts.id}},{{sts.info}}
+<br>
+{% endfor %} -->
+
+<h2>Announcements Page</h2>
+<ul>
+    {% for post in object_list %}
+    <li>{{ post.id}}- {{ post.info}}</li>
+    {% endfor %}
+  </ul>

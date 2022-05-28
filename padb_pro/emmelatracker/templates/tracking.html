@@ -1,0 +1,41 @@
+{% extends 'base_pa.html' %}
+{% load static %}
+{% block content %}
+<head><link rel="stylesheet" href="{% static 'css/attendence.css' %}" /></head><br>
+<body>
+  <link rel="stylesheet" href="{% static 'css/attendence.css' %}" /><br>
+         <title>Emmela Loading Page</title>
+     </head>
+     <body> 
+        <div>
+        <h1 style="text-align:center"><strong><i>TRACKING PAGE</i></strong></h1>
+        </div><hr>
+        <div class="row" style="background-color: lightblue"; >
+          <div class="column">
+            <div class="card">
+              <h2><a href = "announcements">Announcements</a></h2><br>
+            </div>
+            </div><br>
+              <div class="card"><h2>
+                <h2><a href = "attendence_info">Attendence_info</a></h2><br>
+            </div><br>
+            <div class="card">
+              <h2><a href = "bonus">Bonus</a></h2>
+              </div><br>
+              <div class="card">
+                <h2><a href = "blogs_info">Blogs_info</a></h2>
+              </div><br>
+              <div class="card">
+                <h2><a href = "bonus_info">Bonus_info</a></h2>
+              </div><br>
+              <div class="card">
+                <h2><a href = "books">Books</a></h2>
+              </div><br>
+        </div>
+        </body><br>
+        <br><br>
+        <div class="footer">
+          <p>Thank You</p>
+            </div>
+<div>
+  {% endblock content %}

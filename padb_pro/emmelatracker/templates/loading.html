@@ -1,0 +1,43 @@
+{% extends 'base_pa.html' %}
+{% load static %}
+{% block content %}
+<html>
+    <head>
+     <link rel="stylesheet" href="{% static 'css/attendence.css' %}" /><br>
+         <title>Emmela Loading Page</title>
+     </head>
+     <body> 
+        <div>
+        <h1 style="text-align:center"><strong><i>LOADING PAGE</i></strong></h1>
+        </div><hr>
+        <div class="row" style="background-color: lightblue"; >
+          <div class="column">
+            <div class="card">
+              <h2><a href = "announcements">Announcements</a></h2><br>
+            </div>
+            </div><br>
+              <div class="card"><h2>
+                <a href = "attendance">Attendence</a></h2>
+                <p> This table contains attendence of each member in office</p>
+            </div><br>
+            <div class="card">
+                <h2><a href = "worklogs">Worklogs</a></h2>
+              </div><br>
+              <div class="card">
+                <h2><a href = "ideabox">Ideabox</a></h2><br>
+              </div><br>
+              <div class="card">
+                <h2><a href = "tasks">Tasks</a></h2>
+              </div><br>
+              <div class="card">
+                <h2><a href = "special_dates">Special_dates</a></h2>
+              </div><br>
+        </div>
+        </body><br>
+        <br><br>
+        <div class="footer">
+          <p>Thank You</p>
+            </div>
+</html>
+
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends 'base_pa.html' %}
+{% load static %}
+{% block content %}
+<h2>Emmela Worklogs Page</h2>
+<ul>
+    {% for post in object_list %}
+    
+    <li><a href = "{% url 'wlarticle-detail' post.pk %}">{{ post.task_id}}</a> {{ post.details_of_execution}} - {{ post.is_done}} - {{post.is_hold}} {{post.member_id}} - {{post.remarks}} - {{post.git_url}}</li>
+    <p><a href="{% url 'wleditlogs' post.pk %}">Edit  </a></p>
+    <p><a href="{% url 'wldeletelogs' post.pk %}">Delete</a></p>
+    <hr>
+    {% endfor %}
+    <br>
+  </ul>
+  <br>
+
+  <h3><a href="Worklogs_add_post">add_worklog</a></h3>
+
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends 'base_pa.html' %}
+{% block content %}
+
+<h1>{{ object.task_id }}</h1>
+
+<p>By: {{ object.member_id}}</p><br>
+<hr>
+<br>
+{{ object.details_of_execution }}
+
+<br></br>
+<a href="{% url 'worklogswithhtml' %}" class="btn btn-secondary">Back </a>
+<br></br>
+{% endblock content %}

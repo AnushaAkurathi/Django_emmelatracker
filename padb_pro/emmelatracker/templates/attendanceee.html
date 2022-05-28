@@ -1,0 +1,35 @@
+{% extends 'base_pa.html' %}
+{% load static %}
+{% block content %}
+<div class="header"><h1>Emmela Attendance Page</h1></div>
+<head><link rel="stylesheet" href="{% static 'css/all_pages.css' %}" /></head><br>
+<table class = 'a' style="width:100%;">
+    <thead>
+        <tr>
+          <th scope="col" >ID</th>
+          <h1><th scope="col" >Member_ID</th><h1>
+          <th scope="col" >Details</th>
+          <th scope="col" >Reason</th>
+          <th scope="col" >Leave_for</th>
+          <th scope="col" >Type</th>
+          <th scope="col" >Break</th>
+          <th scope="col" >Date</th>
+        </tr>
+      </thead>
+    <body>
+    <tr>
+      {% for post in object_list %}
+      <th scope="row">{{post.id}}</th>
+      <td>{{ post.ids }}</td>
+      <td>{{ post.details}}</td>
+      <td>{{ post.reason}}</td>
+      <td>{{ post.leave_for}}</td>
+      <td>{{ post.typ_e }}</td>
+      <td>{{ post.break }}</td>
+      <td>{{ post.date }}</td>
+    </tr>
+    <!-- <li>{{ post.ids }} {{ post.details}}- {{ post.reason}} {{post.leave_for}} {{post.typ_e}} {{post.brea_k}} {{post.date}}</li> -->
+    {% endfor %}
+</tbody>
+</table>
+{% endblock content %}

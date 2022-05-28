@@ -1,0 +1,6 @@
+<h2>Emmela Team members Page</h2>
+<ul>
+    {% for post in object_list %}
+    <li>{{ post.member_id}}- {{ post.member}}</li>
+    {% endfor %}
+  </ul>
